@@ -53,7 +53,7 @@ do {
 	System.out.println("You flip a coin and it is..." + coin);
 	System.out.println("Would you like to flip again (y/n)?");
 	again = scan.next();
-}while(again == "y");
+}while(again.equals("y"));
 //        while (again.equals("y")) {
 //            int flip = rand.nextInt(2);
 //            String coin;

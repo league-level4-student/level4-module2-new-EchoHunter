@@ -37,7 +37,11 @@ public class ConsoleStore {
      */
 
     public static void main(String[] args) {
-
+    	Cart<Food> c = new Cart<Food>();
+    	
+    	do {
+    		
+    	}while();
     }
 
 }
