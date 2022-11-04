@@ -12,9 +12,9 @@ public class GoShopping {
 	public static void main(String[] args) {
 		// 2. Create a Cart object of type Candy
 //			Cart can = new Cart();
-//		// 3. Create another Cart object of type Cereal
+////		// 3. Create another Cart object of type Cereal
 //			Cart cer = new Cart();
-		// 4. Add a few items to EACH cart
+//		// 4. Add a few items to EACH cart
 //		can.add(new Candy());		
 //		can.add(new Candy());
 //		can.add(new Candy());
@@ -22,26 +22,26 @@ public class GoShopping {
 //		cer.add(new Cereal());
 //		cer.add(new Cereal());
 //		cer.add(new Cereal());
-		
+//		
 //		// 5. Call the showCart() method on EACH cart
-//		can.showCart();
-//		cer.showCart();
-		
+////		can.showCart();
+////		cer.showCart();
+//		
 		// 6. Run the code
 		
 		// 7. Comment out the code you have so far
 		
 		// 8. Repeat steps 2-5 for a Clothing Cart and a Toy Cart
 		
-		Cart<Clothing> clo = new Cart<Clothing>();
-		Cart<Toy> toy = new Cart<Toy>();
-		clo.add(new Clothing());
-		clo.add(new Clothing());
-		toy.add(new Toy()); 
-		toy.add(new Toy()); 
-		toy.add(new Toy()); 
-		toy.showCart();
-		clo.showCart();
+//		Cart<Clothing> clo = new Cart<Clothing>();
+//		Cart<Toy> toy = new Cart<Toy>();
+//		clo.add(new Clothing());
+//		clo.add(new Clothing());
+//		toy.add(new Toy()); 
+//		toy.add(new Toy()); 
+//		toy.add(new Toy()); 
+//		toy.showCart();
+//		clo.showCart();
 		// Why are there errors?
 		
 		// 9. Modify the Cart class so that this code compiles
