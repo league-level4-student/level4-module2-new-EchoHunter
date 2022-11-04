@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 
 public abstract class Food {
     String item;
-
+    double price;
     public abstract JLabel getFood();
 
     @SuppressWarnings("rawtypes")

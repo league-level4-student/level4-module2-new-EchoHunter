@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 
 public class Candy extends Food{
 	public Candy() {
+		price = 0.99;
 		if(new Random().nextBoolean()) {
 			this.item = "candy1.jpeg";
 		}

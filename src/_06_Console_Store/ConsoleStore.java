@@ -1,5 +1,8 @@
 package _06_Console_Store;
 
+import java.util.Iterator;
+import java.util.Scanner;
+
 public class ConsoleStore {
 
     /*
@@ -38,10 +41,30 @@ public class ConsoleStore {
 
     public static void main(String[] args) {
     	Cart<Food> c = new Cart<Food>();
-    	
+    	double money = 24.99;
+    	Scanner s = new Scanner(System.in);
+    	String the = "";
+    	boolean stillShop = true;
     	do {
-    		
-    	}while();
+    		System.out.println("You are at the gorcery store, what would you like to buy? \nCereal - $4.99 \nCandy - $0.99 \nFancyCheese - $13.99\nAvocado - $1.99 ");
+    	 the = s.next() == "Cereal" ? "4.99": s.next();
+    	 the = the == "Candy" ? "0.99": s.next();
+    	 the = the == "FancyCheese" ? "13.99": s.next();
+    	 the = the == "Avocado" ? "1.99": s.next();
+    	 money -= Double.parseDouble(the);
+    	 if (the.equals("Cereal")) {
+			c.add(new Cereal());
+		} else if (the.equals("Candy")) {
+			c.add(new Candy());
+		}else if (the.equals("FancyCheese")) {
+			c.add(new FancyCheese());
+		}else if (the.equals("Avocado")) {
+			c.add(new Avocado());
+		}
+    	 	System.out.println("Would you like to continue shopping? true/false");
+    	 	stillShop = s.nextBoolean();
+    	}while(stillShop);
+    	s.close();
     }
 
 }
